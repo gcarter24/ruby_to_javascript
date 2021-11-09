@@ -4,12 +4,12 @@ def left_equal_right(arr)
   left = 0
   right = arr.reduce(:+)
 
-  arr.each do |x|
-    right -= x
-    return x if left == right
-    left += x
+  arr.each do |i|
+    right -= i
+    return i if left == right
+    left += i
   end
-  x
+  i
 end
 
 p left_equal_right(arr)
